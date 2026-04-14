@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App del Clima</title>
+    <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>
+            <img src="assets/icons/weather.png" alt="Clima" width="40">
+            App del Clima
+        </h1>
+
+        <!-- Selección de ciudad -->
+        <div class="form-group">
+            <label for="city">Selecciona una ciudad:</label>
+            <select id="city">
+                <option value="" selected disabled>Selecciona una ciudad</option>
+                <option value="coacalco">Coacalco</option>
+                <option value="ciudad de mexico">Ciudad de México</option>
+                <option value="guadalajara">Guadalajara</option>
+                <option value="monterrey">Monterrey</option>
+            </select>
+        </div>
+
+        <!-- Botón -->
+        <button id="btnBuscar">Consultar Clima</button>
+
+        <!-- Resultado del clima -->
+        <div id="weather-result" class="weather-card">
+            <h2>Clima</h2>
+
+            <p>
+                <img src="assets/icons/temperature.png" alt="Temperatura" width="50">
+                <span id="temperature">Temperatura: -- °C</span>
+            </p>
+
+            <p>
+                <img src="assets/icons/wind.png" alt="Viento" width="45">
+                <span id="wind">Viento: -- km/h</span>
+            </p>
+
+            <p>
+                <img src="assets/icons/cloud.png" alt="Clima" width="45">
+                <span id="description">Estado: --</span>
+            </p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/app.js"></script>
+    <script src="js/test.js"></script>
+
+</body>
+
+</html>
